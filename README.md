@@ -24,8 +24,7 @@ seguintes modulos com os sequintes **prefixos**
 - **HEA**_Heap.h : Modulo que implementa o heapsort. Tem como dependencia o modulo BEN_Benchmark
 - **SEL**_Selection.h : Modulo que implementa o selection sort; Tem como dependencia o modulo BEN_Benchmark
 - **ARR**_Array_Utils : Modulo para facilitar a manipulação, criação e comparação de arrays 
-
-- **TST_Suite.h : Biblioteca de testes automatizados. É fundamental que nossos 
+- **TST**_Suite.h : Biblioteca de testes automatizados. É fundamental que nossos 
 modulos sejam testados e estejam funcionando sem erros para não interferirmos no 
 trabalho do parceiro.
 
@@ -39,7 +38,6 @@ e gera um arquivo de saida com os resultados
 - Array_Utils_Test.c : Testa o modulo array utils
 - Benchmark_Test.c : Testa o benchmark
 
-
 # API
 
 Estas são as funções publicas, presentes no arquivo de cabeçario (.h)
@@ -50,6 +48,12 @@ Estas são as funções publicas, presentes no arquivo de cabeçario (.h)
 
 #### medida -> unsigned long long
 Alias para unsigned long long. Usado para retornar as medidas
+
+#### Benchmark -> _benchmark*
+Alias para um ponteiro para o struct de tipo _benchmark. Este struct fica encapsulado 
+dentro do modulo e não é possivel acessar seus valores diretamente.
+
+## Funções
 
 #### tempo -> clock_t
 Encapsula o tipo clock_t. O tipo clock_t é um encapsulamento de algum tipo do sistema para 
@@ -80,10 +84,52 @@ Registra que uma copia de registro foi feita.
 Retorna o tempo de processamento total do benchmark.
 
 #### medida BEN_chaves_comparadas(Benchmark benchmark);
-Retorna a quantidade de chaves comparadas medidos pelo benchmark
+Retorna a quantidade de chaves comparadas medidos pelo benchmark.
 
 #### medida BEN_registros_copiados(Benchmark benchmark);
-Retorna a quantidade de registros copiados medidos pelo benchmark
+Retorna a quantidade de registros copiados medidos pelo benchmark.
+
+
+## HEA Heap
+A função de heap sort deve receber o benchmark inicializado. (Com a medição **não** iniciada)
+###Funções
+#### int* HEA_sort(int vet[], int n, Benchmark b);
+
+
+## SEL Select
+A função de select sort deve receber o benchmark inicializado. (Com a medição **não** iniciada)
+###Funções
+#### int* SEL_sort(int vet[], int n, Benchmark b);
+
+## Arr Array Utils
+### Funções
+#### int ARR_equals(int vet_a[], int vet_b[], int n);
+Compara se dois arrays são iguais. Retorna 0 caso não sejam, e != 0 caso sejam iguais
+
+#### int* ARR_copiar(int vet[], int n);
+Retorna um array identico a vet
+
+#### int* ARR_criar_aleatorio(int n);
+Aloca e retorna um array aleatorio de tamanho n.
+
+
+## TST Suite
+Os testes devem ser implementados em programas diferentes.
+
+### Funções
+#### TST_iniciar();
+Inicia a suite de testes. Requerido no inicio dos testes.
+
+#### TST_assert(int condicao);
+Verifica se a condição é verdadeira, diferente de 0. (O Teste passou)
+
+#### TST_assert_not(int condicao);
+Verifica se a condição é falsa, igual a zero. (O teste não passou)
+
+#### TST_finalizar(int condicao);
+Finaliza a suite de testes e imprime o resultado na tela.
+
+
 
 
 
