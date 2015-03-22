@@ -46,7 +46,7 @@ Estas são as funções publicas, presentes no arquivo de cabeçario (.h)
 
 ### Tipos exportados (typedef)
 
-#### medida -> unsigned long long
+#### MEDIDA -> unsigned long long
 Alias para unsigned long long. Usado para retornar as medidas
 
 #### Benchmark -> _benchmark*
@@ -55,9 +55,6 @@ dentro do modulo e não é possivel acessar seus valores diretamente.
 
 ## Funções
 
-#### tempo -> clock_t
-Encapsula o tipo clock_t. O tipo clock_t é um encapsulamento de algum tipo do sistema para 
-o retorno do tempo de processamento;
 
 
 #### Benchmark BEN_criar();
@@ -80,13 +77,13 @@ Registra uma comparação de chave.
 #### void BEN_copiou_registro(Benchmark benchmark);
 Registra que uma copia de registro foi feita.
 
-#### tempo BEN_tempo_processamento(Benchmark benchmark);
+#### clock_t BEN_tempo_processamento(Benchmark benchmark);
 Retorna o tempo de processamento total do benchmark.
 
-#### medida BEN_chaves_comparadas(Benchmark benchmark);
+#### MEDIDA BEN_chaves_comparadas(Benchmark benchmark);
 Retorna a quantidade de chaves comparadas medidos pelo benchmark.
 
-#### medida BEN_registros_copiados(Benchmark benchmark);
+#### MEDIDA BEN_registros_copiados(Benchmark benchmark);
 Retorna a quantidade de registros copiados medidos pelo benchmark.
 
 
