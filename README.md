@@ -15,6 +15,25 @@ Os vetores serão gerados aleatoriamente.
 
 O enunciado do trabalho pode ser encontrado no link: https://sites.google.com/site/vanessavcos/disciplinas/com112/Trabalho1_2015_CCO.pdf?attredirects=0&d=1
 
+
+## Compilando e executando
+Para compilar e executaruse os scripts auxilares. É necessario ter o gcc instalado.
+
+Teste do benchmark
+```sh
+sh compile_benchmark_test.sh
+./benchmark_test.out
+```
+
+Teste da suite de testes.
+```sh
+sh compile_suite_test.sh
+./suite_test.out
+```
+
+**Favor ao adcionar dependencias continuar seguindo o padrão.**
+
+
 ## Modularização
 
 Para facilitar o desenvolvimento remoto em equipe o codigo está organizado nos 
