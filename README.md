@@ -20,23 +20,23 @@ O enunciado do trabalho pode ser encontrado no link: https://sites.google.com/si
 Para facilitar o desenvolvimento remoto em equipe o codigo está organizado nos 
 seguintes modulos com os sequintes **prefixos**
 
-- **BEN**_Benchmark.h : Modulo que retorna um tipo Benchmark que gerencia as medições
-- **HEA**_Heap.h : Modulo que implementa o heapsort. Tem como dependencia o modulo BEN_Benchmark
-- **SEL**_Selection.h : Modulo que implementa o selection sort; Tem como dependencia o modulo BEN_Benchmark
-- **ARR**_Array_Utils : Modulo para facilitar a manipulação, criação e comparação de arrays 
-- **TST**_Suite.h : Biblioteca de testes automatizados. É fundamental que nossos 
+- **BEN**_benchmark.h : Modulo que retorna um tipo Benchmark que gerencia as medições
+- **HEA**_heap.h : Modulo que implementa o heapsort. Tem como dependencia o modulo BEN_Benchmark
+- **SEL**_selection.h : Modulo que implementa o selection sort; Tem como dependencia o modulo BEN_Benchmark
+- **ARR**_array_Utils : Modulo para facilitar a manipulação, criação e comparação de arrays 
+- **TST**_suite.h : Biblioteca de testes automatizados. É fundamental que nossos 
 modulos sejam testados e estejam funcionando sem erros para não interferirmos no 
 trabalho do parceiro.
 
 ### Modulos executaveis
 
 Os seguintes artefatos são responsaveis pela execução do aplicativo
-- Trabalho_Main.c : Executa a tarefa proposta no trabalho. Le o arquivo de entrada 
+- trabalho_main.c : Executa a tarefa proposta no trabalho. Le o arquivo de entrada 
 e gera um arquivo de saida com os resultados
-- Heap_Test.c : Testa o heap sort
-- Selection_Test.c : Testa o selection sort
-- Array_Utils_Test.c : Testa o modulo array utils
-- Benchmark_Test.c : Testa o benchmark
+- heap_test.c : Testa o heap sort
+- selection_test.c : Testa o selection sort
+- srray_utils_Test.c : Testa o modulo array utils
+- benchmark_test.c : Testa o benchmark
 
 # API
 
@@ -86,6 +86,10 @@ Retorna a quantidade de chaves comparadas medidos pelo benchmark.
 #### MEDIDA BEN_registros_copiados(Benchmark benchmark);
 Retorna a quantidade de registros copiados medidos pelo benchmark.
 
+#### void BEN_imprimir(Benchmark benchmark);
+Imprime na saida padrão o resultado final ou parcial do benchmark de forma legivel 
+por humanos.
+
 
 ## HEA Heap
 A função de heap sort deve receber o benchmark inicializado. (Com a medição **não** iniciada)
@@ -114,17 +118,19 @@ Aloca e retorna um array aleatorio de tamanho n.
 Os testes devem ser implementados em programas diferentes.
 
 ### Funções
-#### TST_iniciar();
+#### void TST_iniciar();
 Inicia a suite de testes. Requerido no inicio dos testes.
 
-#### TST_assert(int condicao);
-Verifica se a condição é verdadeira, diferente de 0. (O Teste passou)
+#### void TST_assert(int condicao, char* mensagem);
+Verifica se a condição é verdadeira, diferente de 0. (O Teste passou). Uma 
+mensagem em string deve ser passada explicando qual é a asserção.
 
-#### TST_assert_not(int condicao);
+#### void TST_assert_not(int condicao);
 Verifica se a condição é falsa, igual a zero. (O teste não passou)
 
-#### TST_finalizar(int condicao);
-Finaliza a suite de testes e imprime o resultado na tela.
+#### void TST_finalizar(int condicao);
+Finaliza a suite de testes e imprime o resultado na tela. As mensagens das 
+aserções que falharam são imprimidas na tela.
 
 
 
