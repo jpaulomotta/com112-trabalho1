@@ -14,9 +14,6 @@ struct _benchmark
 };
 
 
-
-
-
 /* Funcoes */
 
 Benchmark BEN_criar()

@@ -1,0 +1,67 @@
+Array 0 - Tamanho: 50
+Selection Sort
+Tempo total de processamento:	15.000000 clicks
+Total de chaves comparadas:	1275
+Total de registros copiados:	50
+
+Heap Sort
+Tempo total de processamento:	10.000000 clicks
+Total de chaves comparadas:	420
+Total de registros copiados:	244
+
+
+-------------------------
+
+Array 1 - Tamanho: 100
+Selection Sort
+Tempo total de processamento:	45.000000 clicks
+Total de chaves comparadas:	5050
+Total de registros copiados:	100
+
+Heap Sort
+Tempo total de processamento:	19.000000 clicks
+Total de chaves comparadas:	1038
+Total de registros copiados:	596
+
+
+-------------------------
+
+Array 2 - Tamanho: 500
+Selection Sort
+Tempo total de processamento:	919.000000 clicks
+Total de chaves comparadas:	125250
+Total de registros copiados:	500
+
+Heap Sort
+Tempo total de processamento:	119.000000 clicks
+Total de chaves comparadas:	7405
+Total de registros copiados:	4009
+
+
+-------------------------
+
+Array 3 - Tamanho: 10000
+Selection Sort
+Tempo total de processamento:	326272.000000 clicks
+Total de chaves comparadas:	50005000
+Total de registros copiados:	10000
+
+Heap Sort
+Tempo total de processamento:	2614.000000 clicks
+Total de chaves comparadas:	235147
+Total de registros copiados:	124016
+
+
+-------------------------
+
+Array 4 - Tamanho: 30000
+Selection Sort
+Tempo total de processamento:	2852858.000000 clicks
+Total de chaves comparadas:	450015000
+Total de registros copiados:	30000
+
+Heap Sort
+Tempo total de processamento:	8940.000000 clicks
+Total de chaves comparadas:	800559
+Total de registros copiados:	419860
+

@@ -17,7 +17,14 @@ O enunciado do trabalho pode ser encontrado no link: https://sites.google.com/si
 
 
 ## Compilando e executando
-Para compilar e executaruse os scripts auxilares. É necessario ter o gcc instalado.
+Para compilar e executar use os scripts auxilares. É necessario ter o gcc instalado.
+
+Trabalho (MAIN)
+```sh
+sh compile_trabalho.sh
+./trabalho1.out 40 entrada.txt saida.txt
+```
+
 
 Teste do benchmark
 ```sh
@@ -113,7 +120,7 @@ por humanos.
 ## HEA Heap
 A função de heap sort deve receber o benchmark inicializado. (Com a medição **não** iniciada)
 ###Funções
-#### int* HEA_sort(int vet[], int n, Benchmark b);
+#### void HEA_sort(int vet[], int n, Benchmark b);
 
 
 ## SEL Select
@@ -129,8 +136,8 @@ Compara se dois arrays são iguais. Retorna 0 caso não sejam, e != 0 caso sejam
 #### int* ARR_copiar(int vet[], int n);
 Retorna um array identico a vet
 
-#### int* ARR_criar_aleatorio(int n);
-Aloca e retorna um array aleatorio de tamanho n.
+#### int* ARR_criar_aleatorio(int n, unsigned int semente);
+Aloca e retorna um array aleatorio de tamanho n e semente para o gerador de numero aleatorios.
 
 
 ## TST Suite
