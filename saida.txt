@@ -1,67 +1,53 @@
-Array 0 - Tamanho: 50
+Array 0 - Tamanho: 1000
 Selection Sort
-Tempo total de processamento:	15.000000 clicks
-Total de chaves comparadas:	1275
-Total de registros copiados:	50
+Tempo total de processamento:	4153.000000 ticks
+Total de chaves comparadas:	500500
+Total de registros copiados:	1000
 
 Heap Sort
-Tempo total de processamento:	10.000000 clicks
-Total de chaves comparadas:	420
-Total de registros copiados:	244
+Tempo total de processamento:	244.000000 ticks
+Total de chaves comparadas:	16876
+Total de registros copiados:	9100
 
 
 -------------------------
 
-Array 1 - Tamanho: 100
+Array 1 - Tamanho: 5000
 Selection Sort
-Tempo total de processamento:	45.000000 clicks
-Total de chaves comparadas:	5050
-Total de registros copiados:	100
+Tempo total de processamento:	81946.000000 ticks
+Total de chaves comparadas:	12502500
+Total de registros copiados:	5000
 
 Heap Sort
-Tempo total de processamento:	19.000000 clicks
-Total de chaves comparadas:	1038
-Total de registros copiados:	596
+Tempo total de processamento:	1526.000000 ticks
+Total de chaves comparadas:	107543
+Total de registros copiados:	56983
 
 
 -------------------------
 
-Array 2 - Tamanho: 500
+Array 2 - Tamanho: 10000
 Selection Sort
-Tempo total de processamento:	919.000000 clicks
-Total de chaves comparadas:	125250
-Total de registros copiados:	500
-
-Heap Sort
-Tempo total de processamento:	119.000000 clicks
-Total de chaves comparadas:	7405
-Total de registros copiados:	4009
-
-
--------------------------
-
-Array 3 - Tamanho: 10000
-Selection Sort
-Tempo total de processamento:	326272.000000 clicks
+Tempo total de processamento:	322246.000000 ticks
 Total de chaves comparadas:	50005000
 Total de registros copiados:	10000
 
 Heap Sort
-Tempo total de processamento:	2614.000000 clicks
+Tempo total de processamento:	2591.000000 ticks
 Total de chaves comparadas:	235147
 Total de registros copiados:	124016
 
 
 -------------------------
 
-Array 4 - Tamanho: 30000
+Array 3 - Tamanho: 50000
 Selection Sort
-Tempo total de processamento:	2852858.000000 clicks
-Total de chaves comparadas:	450015000
-Total de registros copiados:	30000
+Tempo total de processamento:	8028022.000000 ticks
+Total de chaves comparadas:	1250025000
+Total de registros copiados:	50000
 
 Heap Sort
-Tempo total de processamento:	8940.000000 clicks
-Total de chaves comparadas:	800559
-Total de registros copiados:	419860
+Tempo total de processamento:	19038.000000 ticks
+Total de chaves comparadas:	1409919
+Total de registros copiados:	737462
 

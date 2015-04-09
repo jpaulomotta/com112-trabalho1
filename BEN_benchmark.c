@@ -81,7 +81,7 @@ MEDIDA BEN_registros_copiados(Benchmark b)
 void BEN_imprimir(Benchmark b)
 {
     printf("Benchmark\n------------------------------\n\n");
-    printf("Tempo total de processamento:\t%f clicks\n", (double)BEN_tempo_processamento(b));
+    printf("Tempo total de processamento:\t%f ticks\n", (double)BEN_tempo_processamento(b));
     printf("Total de chaves comparadas:\t%llu\n", b->comparadas);
     printf("Total de registros copiados:\t%llu\n", b->copiados);
     printf("\n");

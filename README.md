@@ -22,7 +22,7 @@ Para compilar e executar use os scripts auxilares. É necessario ter o gcc insta
 Trabalho (MAIN)
 ```sh
 sh compile_trabalho.sh
-./trabalho1.out 40 entrada.txt saida.txt
+./trabalho1.out 30 entrada.txt saida.txt
 ```
 
 

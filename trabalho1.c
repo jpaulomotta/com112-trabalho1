@@ -39,7 +39,7 @@ void ler_arquivo_entrada(FILE* arquivo, int** tamanhos_array, int* n)
 
 void imprimir_benchmark_arquivo(FILE* fp, Benchmark b)
 {
-    fprintf(fp, "Tempo total de processamento:\t%f clicks\n", (double)BEN_tempo_processamento(b));
+    fprintf(fp, "Tempo total de processamento:\t%f ticks\n", (double)BEN_tempo_processamento(b));
     fprintf(fp, "Total de chaves comparadas:\t%llu\n", BEN_chaves_comparadas(b));
     fprintf(fp, "Total de registros copiados:\t%llu\n", BEN_registros_copiados(b));
     fprintf(fp, "\n");
